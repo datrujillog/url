@@ -23,7 +23,7 @@ app.use(express.urlencoded({extended: true}));
 
 
 
-    mongoose.connect('mongodb+srv://ecommerce:5gEic4TMFr6GTJbC@tienda.bmrbl3h.mongodb.net/URLSHORTNER',{useNewUrlParser:true,useUnifiedTopology:true},()=>{
+    mongoose.connect('mongodb://localhost:27017/URLSHORTNER',{useNewUrlParser:true,useUnifiedTopology:true},()=>{
         console.log("Database connected!");
     });
 
